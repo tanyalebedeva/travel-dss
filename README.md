@@ -2,6 +2,7 @@
 
 Система поддержки принятия решений, которая помогает туристу выбрать направление и составить маршрут
 с учётом интересов, бюджета, ограниченного времени и неопределённости цен, погоды и срыва поездки.
+
 На выходе ЛПР получает три обоснованных варианта: **«Оптимальный»**, **«Экономный»** и **«Надёжный»**,
 каждый с маршрутом по дням, сметой, стратегией бронирования, рисками и предупреждениями.
 
@@ -13,9 +14,9 @@
 ```bash
 python -m venv .venv && source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-python run_all.py                     # все 8 практик (≈5 мин), результаты в reports/, kb/, superset/data/
+python run_all.py                     # все 8 практик, результаты в reports/, kb/, superset/data/
 streamlit run app/streamlit_app.py    # прототип СППР: http://localhost:8501
-python -m pytest -q                   # 12 проверок
+python -m pytest -q
 ```
 
 Для логического вывода ризонером Pellet нужна Java 11–21 (`java -version`). Без Java модуль базы знаний
