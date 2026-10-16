@@ -1,0 +1,20 @@
+id,name,if,then,priority
+R0,Базовый риск срыва поездки,is_domestic == True,disruption_risk,99
+R0b,Базовый риск срыва поездки (зарубежье),is_domestic == False,disruption_risk,99
+R1,Визу не успеть оформить,needs_visa == True И days_until < @visa_days,status; reasons,90
+R2,Нужна виза,needs_visa == True И days_until >= @visa_days,visa_refusal_risk,80
+R3,Российские карты не принимаются,needs_cash == True,fees_rate,80
+R4,Стоимость с учётом комиссий,total > 0,total_with_fees,70
+R5,Превышение бюджета,total_with_fees > @budget,status; reasons,60
+R6,Бюджет почти исчерпан,total_with_fees > @budget_85 И total_with_fees <= @budget,budget_tight,60
+R7,Жаркий месяц,hot_month == True,climate_penalty; outdoor_factor,50
+R8,Холодный месяц,temp < 8,climate_penalty; exclude_categories,50
+R9,Купальный сезон не начался,is_beach == True И beach_season == False,exclude_categories,50
+R10,Купальный сезон,is_beach == True И beach_season == True,beach_bonus,50
+R11,Перелёт со стыковкой,direct_flight == False,disruption_risk,45
+R12,Нерационально далеко для короткой поездки,long_haul == True И trip_days <= 4,status; reasons,45
+R13,Безопасность при поездке с детьми,with_children == True И safety < 60,family_warning,40
+R14,Дождливый месяц,rain_days >= 12,outdoor_factor,40
+R15,Итоговый риск срыва с учётом визы,visa_refusal_risk > 0,disruption_risk,30
+R17,Жара опасна для детей,with_children == True И hot_month == True,status; reasons,55
+R16,Исключение недопустимой альтернативы,status == недопустимо,excluded,10

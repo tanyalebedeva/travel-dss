@@ -1,0 +1,195 @@
+{
+  "routes": [
+    {
+      "variant": "Оптимальный",
+      "destination": "Санкт-Петербург",
+      "status": "Optimal",
+      "hotel": "стандарт",
+      "objective": 40.27,
+      "n_pois": 9,
+      "utility": 63.54,
+      "travel_h": 5.66,
+      "flight_visa": 9420.0,
+      "stay": 41230.0,
+      "tickets": 9000.0,
+      "transfers": 4850.0,
+      "total": 64500.0,
+      "budget_slack": 2000.0,
+      "greedy_utility": 54.94,
+      "greedy_n_pois": 8,
+      "greedy_travel_h": 3.54,
+      "gain_vs_greedy_%": 15.7,
+      "solve_s": 4.71,
+      "candidates": 10,
+      "hours_used": [
+        4.34,
+        7.71,
+        7.77,
+        6.85,
+        0.0
+      ],
+      "hours_available": [
+        5.0,
+        8.0,
+        8.0,
+        8.0,
+        3.0
+      ]
+    },
+    {
+      "variant": "Экономный",
+      "destination": "Калининград",
+      "status": "Optimal",
+      "hotel": "эконом",
+      "objective": -16.34,
+      "n_pois": 7,
+      "utility": 51.01,
+      "travel_h": 1.61,
+      "flight_visa": 12520.0,
+      "stay": 21510.0,
+      "tickets": 4300.0,
+      "transfers": 810.0,
+      "total": 39140.0,
+      "budget_slack": 27360.0,
+      "greedy_utility": 51.01,
+      "greedy_n_pois": 7,
+      "greedy_travel_h": 1.87,
+      "gain_vs_greedy_%": 0.0,
+      "solve_s": 3.24,
+      "candidates": 8,
+      "hours_used": [
+        4.95,
+        6.66,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "hours_available": [
+        5.0,
+        8.0,
+        8.0,
+        8.0,
+        3.0
+      ]
+    },
+    {
+      "variant": "Надёжный",
+      "destination": "Казань",
+      "status": "Optimal",
+      "hotel": "стандарт",
+      "objective": 55.49,
+      "n_pois": 10,
+      "utility": 72.64,
+      "travel_h": 6.7,
+      "flight_visa": 10360.0,
+      "stay": 31670.0,
+      "tickets": 2900.0,
+      "transfers": 6690.0,
+      "total": 51620.0,
+      "budget_slack": 7880.0,
+      "greedy_utility": 64.99,
+      "greedy_n_pois": 9,
+      "greedy_travel_h": 4.77,
+      "gain_vs_greedy_%": 11.8,
+      "solve_s": 5.68,
+      "candidates": 10,
+      "hours_used": [
+        4.15,
+        7.07,
+        7.73,
+        6.75,
+        0.0
+      ],
+      "hours_available": [
+        5.0,
+        8.0,
+        8.0,
+        8.0,
+        3.0
+      ]
+    }
+  ],
+  "sensitivity": [
+    {
+      "pace_h": 6,
+      "budget": 55000,
+      "status": "Optimal",
+      "hotel": "эконом",
+      "n_pois": 8,
+      "utility": 54.94,
+      "total": 49920.0
+    },
+    {
+      "pace_h": 6,
+      "budget": 70000,
+      "status": "Optimal",
+      "hotel": "стандарт",
+      "n_pois": 8,
+      "utility": 54.94,
+      "total": 60460.0
+    },
+    {
+      "pace_h": 6,
+      "budget": 90000,
+      "status": "Optimal",
+      "hotel": "стандарт",
+      "n_pois": 8,
+      "utility": 54.94,
+      "total": 60220.0
+    },
+    {
+      "pace_h": 8,
+      "budget": 55000,
+      "status": "Optimal",
+      "hotel": "эконом",
+      "n_pois": 8,
+      "utility": 54.94,
+      "total": 49850.0
+    },
+    {
+      "pace_h": 8,
+      "budget": 70000,
+      "status": "Optimal",
+      "hotel": "стандарт",
+      "n_pois": 9,
+      "utility": 63.54,
+      "total": 64500.0
+    },
+    {
+      "pace_h": 8,
+      "budget": 90000,
+      "status": "Optimal",
+      "hotel": "стандарт",
+      "n_pois": 9,
+      "utility": 63.54,
+      "total": 64500.0
+    },
+    {
+      "pace_h": 10,
+      "budget": 55000,
+      "status": "Optimal",
+      "hotel": "эконом",
+      "n_pois": 8,
+      "utility": 57.94,
+      "total": 51860.0
+    },
+    {
+      "pace_h": 10,
+      "budget": 70000,
+      "status": "Optimal",
+      "hotel": "эконом",
+      "n_pois": 10,
+      "utility": 69.92,
+      "total": 57700.0
+    },
+    {
+      "pace_h": 10,
+      "budget": 90000,
+      "status": "Optimal",
+      "hotel": "стандарт",
+      "n_pois": 10,
+      "utility": 69.92,
+      "total": 68010.0
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+variant,destination,status,hotel,objective,n_pois,utility,travel_h,flight_visa,stay,tickets,transfers,total,budget_slack,greedy_utility,greedy_n_pois,greedy_travel_h,gain_vs_greedy_%,solve_s,candidates,hours_used,hours_available
+Оптимальный,Санкт-Петербург,Optimal,стандарт,40.27,9,63.54,5.66,9420.0,41230.0,9000.0,4850.0,64500.0,2000.0,54.94,8,3.54,15.7,4.71,10,"[np.float64(4.34), np.float64(7.71), np.float64(7.77), np.float64(6.85), np.float64(0.0)]","[5.0, 8.0, 8.0, 8.0, 3.0]"
+Экономный,Калининград,Optimal,эконом,-16.34,7,51.01,1.61,12520.0,21510.0,4300.0,810.0,39140.0,27360.0,51.01,7,1.87,0.0,3.24,8,"[np.float64(4.95), np.float64(6.66), np.float64(0.0), np.float64(0.0), np.float64(0.0)]","[5.0, 8.0, 8.0, 8.0, 3.0]"
+Надёжный,Казань,Optimal,стандарт,55.49,10,72.64,6.7,10360.0,31670.0,2900.0,6690.0,51620.0,7880.0,64.99,9,4.77,11.8,5.68,10,"[np.float64(4.15), np.float64(7.07), np.float64(7.73), np.float64(6.75), np.float64(0.0)]","[5.0, 8.0, 8.0, 8.0, 3.0]"

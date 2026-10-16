@@ -1,0 +1,11 @@
+dest_id,name,classes,comfortable_months,beach_season_months,hot_months,needs_visa,needs_cash
+altai,Горный Алтай,"DomesticDestination, FamilyFriendlyDestination, NatureDestination",[],[],[],False,False
+antalya,Анталья,"BeachDestination, ForeignDestination, NatureDestination","[4, 5, 6, 7, 8, 9, 10]","[5, 6, 7, 8, 9]",[],False,True
+dubai,Дубай,"BeachDestination, FamilyFriendlyDestination, ForeignDestination, LongHaulDestination","[1, 2, 3, 4, 11, 12]","[3, 4, 5, 6, 7, 8, 9, 10, 11, 12]","[5, 6, 7, 8, 9]",False,True
+istanbul,Стамбул,"CultureDestination, ForeignDestination","[5, 6, 7, 8, 9, 10]",[],[],False,True
+kaliningrad,Калининград,"BeachDestination, DomesticDestination, FamilyFriendlyDestination",[],[],[],False,False
+kazan,Казань,"CultureDestination, DomesticDestination",[],[],[],False,False
+rome,Рим,"CultureDestination, ForeignDestination, LongHaulDestination, VisaDestination","[5, 6, 7, 8, 9, 10]",[],[],True,True
+sochi,Сочи,"BeachDestination, DomesticDestination, FamilyFriendlyDestination, NatureDestination","[6, 7, 8, 9]","[7, 8]",[],False,False
+spb,Санкт-Петербург,"CultureDestination, DomesticDestination",[],[],[],False,False
+tbilisi,Тбилиси,"CultureDestination, FamilyFriendlyDestination, ForeignDestination, NatureDestination","[7, 8, 9]",[],[],False,True

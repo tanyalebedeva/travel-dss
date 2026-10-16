@@ -1,0 +1,20 @@
+{
+  "engine": "Pellet (owlready2)",
+  "pellet_matches_python": true,
+  "ontology": {
+    "classes": 24,
+    "object_properties": 8,
+    "data_properties": 15,
+    "individuals": 247,
+    "swrl_rules": 8,
+    "production_rules": 19
+  },
+  "owl_file": "kb/travel_dss.owl",
+  "fired_rules_total": 45,
+  "excluded": [
+    "istanbul",
+    "antalya",
+    "dubai",
+    "rome"
+  ]
+}

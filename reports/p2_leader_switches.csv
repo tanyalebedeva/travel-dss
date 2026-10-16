@@ -1,0 +1,8 @@
+criterion,weight,from,to
+K1,0.3334,spb,kazan
+K2,0.0873,spb,kazan
+K2,0.2249,kazan,antalya
+K3,0.2343,kazan,spb
+K4,0.1727,kazan,altai
+K6,0.1666,spb,kazan
+K6,0.2875,kazan,dubai

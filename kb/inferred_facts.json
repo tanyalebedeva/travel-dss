@@ -1,0 +1,216 @@
+[
+ {
+  "dest_id":"altai",
+  "name":"Горный Алтай",
+  "classes":"DomesticDestination, FamilyFriendlyDestination, NatureDestination",
+  "comfortable_months":[
+
+  ],
+  "beach_season_months":[
+
+  ],
+  "hot_months":[
+
+  ],
+  "needs_visa":false,
+  "needs_cash":false,
+  "engine":"Pellet (owlready2)"
+ },
+ {
+  "dest_id":"antalya",
+  "name":"Анталья",
+  "classes":"BeachDestination, ForeignDestination, NatureDestination",
+  "comfortable_months":[
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "beach_season_months":[
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "hot_months":[
+
+  ],
+  "needs_visa":false,
+  "needs_cash":true,
+  "engine":"Pellet (owlready2)"
+ },
+ {
+  "dest_id":"dubai",
+  "name":"Дубай",
+  "classes":"BeachDestination, FamilyFriendlyDestination, ForeignDestination, LongHaulDestination",
+  "comfortable_months":[
+   1,
+   2,
+   3,
+   4,
+   11,
+   12
+  ],
+  "beach_season_months":[
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "hot_months":[
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "needs_visa":false,
+  "needs_cash":true,
+  "engine":"Pellet (owlready2)"
+ },
+ {
+  "dest_id":"istanbul",
+  "name":"Стамбул",
+  "classes":"CultureDestination, ForeignDestination",
+  "comfortable_months":[
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "beach_season_months":[
+
+  ],
+  "hot_months":[
+
+  ],
+  "needs_visa":false,
+  "needs_cash":true,
+  "engine":"Pellet (owlready2)"
+ },
+ {
+  "dest_id":"kaliningrad",
+  "name":"Калининград",
+  "classes":"BeachDestination, DomesticDestination, FamilyFriendlyDestination",
+  "comfortable_months":[
+
+  ],
+  "beach_season_months":[
+
+  ],
+  "hot_months":[
+
+  ],
+  "needs_visa":false,
+  "needs_cash":false,
+  "engine":"Pellet (owlready2)"
+ },
+ {
+  "dest_id":"kazan",
+  "name":"Казань",
+  "classes":"CultureDestination, DomesticDestination",
+  "comfortable_months":[
+
+  ],
+  "beach_season_months":[
+
+  ],
+  "hot_months":[
+
+  ],
+  "needs_visa":false,
+  "needs_cash":false,
+  "engine":"Pellet (owlready2)"
+ },
+ {
+  "dest_id":"rome",
+  "name":"Рим",
+  "classes":"CultureDestination, ForeignDestination, LongHaulDestination, VisaDestination",
+  "comfortable_months":[
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "beach_season_months":[
+
+  ],
+  "hot_months":[
+
+  ],
+  "needs_visa":true,
+  "needs_cash":true,
+  "engine":"Pellet (owlready2)"
+ },
+ {
+  "dest_id":"sochi",
+  "name":"Сочи",
+  "classes":"BeachDestination, DomesticDestination, FamilyFriendlyDestination, NatureDestination",
+  "comfortable_months":[
+   6,
+   7,
+   8,
+   9
+  ],
+  "beach_season_months":[
+   7,
+   8
+  ],
+  "hot_months":[
+
+  ],
+  "needs_visa":false,
+  "needs_cash":false,
+  "engine":"Pellet (owlready2)"
+ },
+ {
+  "dest_id":"spb",
+  "name":"Санкт-Петербург",
+  "classes":"CultureDestination, DomesticDestination",
+  "comfortable_months":[
+
+  ],
+  "beach_season_months":[
+
+  ],
+  "hot_months":[
+
+  ],
+  "needs_visa":false,
+  "needs_cash":false,
+  "engine":"Pellet (owlready2)"
+ },
+ {
+  "dest_id":"tbilisi",
+  "name":"Тбилиси",
+  "classes":"CultureDestination, FamilyFriendlyDestination, ForeignDestination, NatureDestination",
+  "comfortable_months":[
+   7,
+   8,
+   9
+  ],
+  "beach_season_months":[
+
+  ],
+  "hot_months":[
+
+  ],
+  "needs_visa":false,
+  "needs_cash":true,
+  "engine":"Pellet (owlready2)"
+ }
+]

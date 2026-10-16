@@ -1,0 +1,118 @@
+{
+  "lambda_max": 6.0921,
+  "CI": 0.0184,
+  "CR": 0.0149,
+  "RI": 1.24,
+  "weights": {
+    "K1": 0.3356,
+    "K2": 0.0977,
+    "K3": 0.2332,
+    "K4": 0.0594,
+    "K5": 0.1041,
+    "K6": 0.1701
+  },
+  "local_CR": {
+    "K1": 0.025,
+    "K2": 0.0343,
+    "K3": 0.0407,
+    "K4": 0.039,
+    "K5": 0.0221,
+    "K6": 0.0249
+  },
+  "ranking": [
+    {
+      "rank": 1,
+      "name": "Казань",
+      "score": 0.1292
+    },
+    {
+      "rank": 2,
+      "name": "Санкт-Петербург",
+      "score": 0.129
+    },
+    {
+      "rank": 3,
+      "name": "Калининград",
+      "score": 0.1205
+    },
+    {
+      "rank": 4,
+      "name": "Тбилиси",
+      "score": 0.1006
+    },
+    {
+      "rank": 5,
+      "name": "Горный Алтай",
+      "score": 0.0937
+    },
+    {
+      "rank": 6,
+      "name": "Дубай",
+      "score": 0.0918
+    },
+    {
+      "rank": 7,
+      "name": "Сочи",
+      "score": 0.0891
+    },
+    {
+      "rank": 8,
+      "name": "Рим",
+      "score": 0.0833
+    },
+    {
+      "rank": 9,
+      "name": "Стамбул",
+      "score": 0.0821
+    },
+    {
+      "rank": 10,
+      "name": "Анталья",
+      "score": 0.0806
+    }
+  ],
+  "leader_switches": [
+    {
+      "criterion": "K1",
+      "weight": 0.3334,
+      "from": "spb",
+      "to": "kazan"
+    },
+    {
+      "criterion": "K2",
+      "weight": 0.0873,
+      "from": "spb",
+      "to": "kazan"
+    },
+    {
+      "criterion": "K2",
+      "weight": 0.2249,
+      "from": "kazan",
+      "to": "antalya"
+    },
+    {
+      "criterion": "K3",
+      "weight": 0.2343,
+      "from": "kazan",
+      "to": "spb"
+    },
+    {
+      "criterion": "K4",
+      "weight": 0.1727,
+      "from": "kazan",
+      "to": "altai"
+    },
+    {
+      "criterion": "K6",
+      "weight": 0.1666,
+      "from": "spb",
+      "to": "kazan"
+    },
+    {
+      "criterion": "K6",
+      "weight": 0.2875,
+      "from": "kazan",
+      "to": "dubai"
+    }
+  ]
+}
