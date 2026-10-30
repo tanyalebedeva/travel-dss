@@ -400,48 +400,48 @@
   <rdfs:subClassOf rdf:resource="#Destination"/>
 </owl:Class>
 
-<owl:NamedIndividual rdf:about="#Georgia">
-  <rdf:type rdf:resource="#Country"/>
+<Country rdf:about="#Georgia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Грузия</rdfs:label>
   <isDomestic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDomestic>
   <requiresVisaForRU rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</requiresVisaForRU>
   <russianCardsAccepted rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</russianCardsAccepted>
-</owl:NamedIndividual>
+</Country>
 
-<owl:NamedIndividual rdf:about="#Italy">
-  <rdf:type rdf:resource="#Country"/>
+<Country rdf:about="#Italy">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Италия</rdfs:label>
   <isDomestic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDomestic>
   <requiresVisaForRU rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</requiresVisaForRU>
   <russianCardsAccepted rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</russianCardsAccepted>
-</owl:NamedIndividual>
+</Country>
 
-<owl:NamedIndividual rdf:about="#UAE">
-  <rdf:type rdf:resource="#Country"/>
+<Country rdf:about="#UAE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ОАЭ</rdfs:label>
   <isDomestic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDomestic>
   <requiresVisaForRU rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</requiresVisaForRU>
   <russianCardsAccepted rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</russianCardsAccepted>
-</owl:NamedIndividual>
+</Country>
 
-<owl:NamedIndividual rdf:about="#Russia">
-  <rdf:type rdf:resource="#Country"/>
+<Country rdf:about="#Russia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Россия</rdfs:label>
   <isDomestic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</isDomestic>
   <requiresVisaForRU rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</requiresVisaForRU>
   <russianCardsAccepted rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</russianCardsAccepted>
-</owl:NamedIndividual>
+</Country>
 
-<owl:NamedIndividual rdf:about="#Turkey">
-  <rdf:type rdf:resource="#Country"/>
+<Country rdf:about="#Turkey">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Турция</rdfs:label>
   <isDomestic rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</isDomestic>
   <requiresVisaForRU rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</requiresVisaForRU>
   <russianCardsAccepted rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</russianCardsAccepted>
-</owl:NamedIndividual>
+</Country>
 
-<owl:NamedIndividual rdf:about="#sochi">
-  <rdf:type rdf:resource="#Destination"/>
+<Destination rdf:about="#sochi">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <locatedIn rdf:resource="#Russia"/>
   <hasAttraction rdf:resource="#sochi_01"/>
   <hasAttraction rdf:resource="#sochi_02"/>
@@ -457,6 +457,8 @@
   <rdf:type rdf:resource="#DomesticDestination"/>
   <rdf:type rdf:resource="#FamilyFriendlyDestination"/>
   <rdf:type rdf:resource="#NatureDestination"/>
+  <beachSeasonIn rdf:resource="#m09"/>
+  <beachSeasonIn rdf:resource="#m06"/>
   <beachSeasonIn rdf:resource="#m08"/>
   <beachSeasonIn rdf:resource="#m07"/>
   <comfortableIn rdf:resource="#m09"/>
@@ -470,10 +472,10 @@
   <dailyCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7500.0</dailyCost>
   <cultureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.45</cultureScore>
   <natureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.85</natureScore>
-</owl:NamedIndividual>
+</Destination>
 
-<owl:NamedIndividual rdf:about="#spb">
-  <rdf:type rdf:resource="#Destination"/>
+<Destination rdf:about="#spb">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <locatedIn rdf:resource="#Russia"/>
   <hasAttraction rdf:resource="#spb_01"/>
   <hasAttraction rdf:resource="#spb_02"/>
@@ -494,10 +496,10 @@
   <dailyCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7000.0</dailyCost>
   <cultureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</cultureScore>
   <natureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.25</natureScore>
-</owl:NamedIndividual>
+</Destination>
 
-<owl:NamedIndividual rdf:about="#kazan">
-  <rdf:type rdf:resource="#Destination"/>
+<Destination rdf:about="#kazan">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <locatedIn rdf:resource="#Russia"/>
   <hasAttraction rdf:resource="#kazan_01"/>
   <hasAttraction rdf:resource="#kazan_02"/>
@@ -518,10 +520,10 @@
   <dailyCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5500.0</dailyCost>
   <cultureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.75</cultureScore>
   <natureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.25</natureScore>
-</owl:NamedIndividual>
+</Destination>
 
-<owl:NamedIndividual rdf:about="#kaliningrad">
-  <rdf:type rdf:resource="#Destination"/>
+<Destination rdf:about="#kaliningrad">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <locatedIn rdf:resource="#Russia"/>
   <hasAttraction rdf:resource="#kaliningrad_01"/>
   <hasAttraction rdf:resource="#kaliningrad_02"/>
@@ -536,6 +538,8 @@
   <rdf:type rdf:resource="#BeachDestination"/>
   <rdf:type rdf:resource="#DomesticDestination"/>
   <rdf:type rdf:resource="#FamilyFriendlyDestination"/>
+  <beachSeasonIn rdf:resource="#m08"/>
+  <beachSeasonIn rdf:resource="#m07"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Калининград</rdfs:label>
   <flightHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</flightHours>
   <directFlight rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</directFlight>
@@ -543,10 +547,10 @@
   <dailyCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5500.0</dailyCost>
   <cultureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.65</cultureScore>
   <natureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.65</natureScore>
-</owl:NamedIndividual>
+</Destination>
 
-<owl:NamedIndividual rdf:about="#altai">
-  <rdf:type rdf:resource="#Destination"/>
+<Destination rdf:about="#altai">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <locatedIn rdf:resource="#Russia"/>
   <hasAttraction rdf:resource="#altai_01"/>
   <hasAttraction rdf:resource="#altai_02"/>
@@ -568,10 +572,10 @@
   <dailyCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5000.0</dailyCost>
   <cultureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.25</cultureScore>
   <natureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</natureScore>
-</owl:NamedIndividual>
+</Destination>
 
-<owl:NamedIndividual rdf:about="#istanbul">
-  <rdf:type rdf:resource="#Destination"/>
+<Destination rdf:about="#istanbul">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <locatedIn rdf:resource="#Turkey"/>
   <hasAttraction rdf:resource="#istanbul_01"/>
   <hasAttraction rdf:resource="#istanbul_02"/>
@@ -599,10 +603,10 @@
   <dailyCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7500.0</dailyCost>
   <cultureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.95</cultureScore>
   <natureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.3</natureScore>
-</owl:NamedIndividual>
+</Destination>
 
-<owl:NamedIndividual rdf:about="#antalya">
-  <rdf:type rdf:resource="#Destination"/>
+<Destination rdf:about="#antalya">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <locatedIn rdf:resource="#Turkey"/>
   <hasAttraction rdf:resource="#antalya_01"/>
   <hasAttraction rdf:resource="#antalya_02"/>
@@ -620,6 +624,7 @@
   <rdf:type rdf:resource="#NatureDestination"/>
   <beachSeasonIn rdf:resource="#m05"/>
   <beachSeasonIn rdf:resource="#m09"/>
+  <beachSeasonIn rdf:resource="#m10"/>
   <beachSeasonIn rdf:resource="#m06"/>
   <beachSeasonIn rdf:resource="#m08"/>
   <beachSeasonIn rdf:resource="#m07"/>
@@ -637,10 +642,10 @@
   <dailyCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8000.0</dailyCost>
   <cultureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</cultureScore>
   <natureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</natureScore>
-</owl:NamedIndividual>
+</Destination>
 
-<owl:NamedIndividual rdf:about="#dubai">
-  <rdf:type rdf:resource="#Destination"/>
+<Destination rdf:about="#dubai">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <locatedIn rdf:resource="#UAE"/>
   <hasAttraction rdf:resource="#dubai_01"/>
   <hasAttraction rdf:resource="#dubai_02"/>
@@ -664,8 +669,10 @@
   <hotIn rdf:resource="#m07"/>
   <beachSeasonIn rdf:resource="#m05"/>
   <beachSeasonIn rdf:resource="#m09"/>
+  <beachSeasonIn rdf:resource="#m02"/>
   <beachSeasonIn rdf:resource="#m11"/>
   <beachSeasonIn rdf:resource="#m03"/>
+  <beachSeasonIn rdf:resource="#m01"/>
   <beachSeasonIn rdf:resource="#m06"/>
   <beachSeasonIn rdf:resource="#m10"/>
   <beachSeasonIn rdf:resource="#m04"/>
@@ -685,10 +692,10 @@
   <dailyCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13000.0</dailyCost>
   <cultureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.45</cultureScore>
   <natureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.4</natureScore>
-</owl:NamedIndividual>
+</Destination>
 
-<owl:NamedIndividual rdf:about="#tbilisi">
-  <rdf:type rdf:resource="#Destination"/>
+<Destination rdf:about="#tbilisi">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <locatedIn rdf:resource="#Georgia"/>
   <hasAttraction rdf:resource="#tbilisi_01"/>
   <hasAttraction rdf:resource="#tbilisi_02"/>
@@ -715,10 +722,10 @@
   <dailyCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5000.0</dailyCost>
   <cultureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</cultureScore>
   <natureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</natureScore>
-</owl:NamedIndividual>
+</Destination>
 
-<owl:NamedIndividual rdf:about="#rome">
-  <rdf:type rdf:resource="#Destination"/>
+<Destination rdf:about="#rome">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <locatedIn rdf:resource="#Italy"/>
   <hasAttraction rdf:resource="#rome_01"/>
   <hasAttraction rdf:resource="#rome_02"/>
@@ -748,925 +755,926 @@
   <dailyCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11000.0</dailyCost>
   <cultureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</cultureScore>
   <natureScore rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.25</natureScore>
-</owl:NamedIndividual>
+</Destination>
 
-<owl:NamedIndividual rdf:about="#sochi_01">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#sochi_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Олимпийский парк</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#sochi_02">
-  <rdf:type rdf:resource="#NatureSite"/>
+<NatureSite rdf:about="#sochi_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Роза Хутор (канатная дорога)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3500.0</ticketCost>
-</owl:NamedIndividual>
+</NatureSite>
 
-<owl:NamedIndividual rdf:about="#sochi_03">
-  <rdf:type rdf:resource="#NatureSite"/>
+<NatureSite rdf:about="#sochi_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Дендрарий</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">600.0</ticketCost>
-</owl:NamedIndividual>
+</NatureSite>
 
-<owl:NamedIndividual rdf:about="#sochi_04">
-  <rdf:type rdf:resource="#Entertainment"/>
+<Entertainment rdf:about="#sochi_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Скайпарк</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2500.0</ticketCost>
-</owl:NamedIndividual>
+</Entertainment>
 
-<owl:NamedIndividual rdf:about="#sochi_05">
-  <rdf:type rdf:resource="#NatureSite"/>
+<NatureSite rdf:about="#sochi_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Агурские водопады</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300.0</ticketCost>
-</owl:NamedIndividual>
+</NatureSite>
 
-<owl:NamedIndividual rdf:about="#sochi_06">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#sochi_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Морской вокзал и набережная</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#sochi_07">
-  <rdf:type rdf:resource="#NatureSite"/>
+<NatureSite rdf:about="#sochi_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Гора Ахун (смотровая башня)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200.0</ticketCost>
-</owl:NamedIndividual>
+</NatureSite>
 
-<owl:NamedIndividual rdf:about="#sochi_08">
-  <rdf:type rdf:resource="#Beach"/>
+<Beach rdf:about="#sochi_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пляж Ривьера</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.3</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500.0</ticketCost>
-</owl:NamedIndividual>
+</Beach>
 
-<owl:NamedIndividual rdf:about="#sochi_09">
-  <rdf:type rdf:resource="#Entertainment"/>
+<Entertainment rdf:about="#sochi_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Сочи Парк</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2800.0</ticketCost>
-</owl:NamedIndividual>
+</Entertainment>
 
-<owl:NamedIndividual rdf:about="#sochi_10">
-  <rdf:type rdf:resource="#Gastronomy"/>
+<Gastronomy rdf:about="#sochi_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ужин на Курортном проспекте</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2500.0</ticketCost>
-</owl:NamedIndividual>
+</Gastronomy>
 
-<owl:NamedIndividual rdf:about="#spb_01">
-  <rdf:type rdf:resource="#Museum"/>
+<Museum rdf:about="#spb_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Эрмитаж</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">800.0</ticketCost>
-</owl:NamedIndividual>
+</Museum>
 
-<owl:NamedIndividual rdf:about="#spb_02">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#spb_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Петергоф (Нижний парк)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#spb_03">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#spb_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Исаакиевский собор (колоннада)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">700.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#spb_04">
-  <rdf:type rdf:resource="#Museum"/>
+<Museum rdf:about="#spb_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Русский музей</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">600.0</ticketCost>
-</owl:NamedIndividual>
+</Museum>
 
-<owl:NamedIndividual rdf:about="#spb_05">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#spb_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Спас на Крови</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">600.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#spb_06">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#spb_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Петропавловская крепость</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">800.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#spb_07">
-  <rdf:type rdf:resource="#Entertainment"/>
+<Entertainment rdf:about="#spb_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Прогулка по рекам и каналам</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500.0</ticketCost>
-</owl:NamedIndividual>
+</Entertainment>
 
-<owl:NamedIndividual rdf:about="#spb_08">
-  <rdf:type rdf:resource="#Gastronomy"/>
+<Gastronomy rdf:about="#spb_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Новая Голландия</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500.0</ticketCost>
-</owl:NamedIndividual>
+</Gastronomy>
 
-<owl:NamedIndividual rdf:about="#spb_09">
-  <rdf:type rdf:resource="#Museum"/>
+<Museum rdf:about="#spb_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Царское Село (Екатерининский дворец)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500.0</ticketCost>
-</owl:NamedIndividual>
+</Museum>
 
-<owl:NamedIndividual rdf:about="#spb_10">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#spb_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Лахта-центр (смотровая)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#kazan_01">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#kazan_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Казанский Кремль</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#kazan_02">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#kazan_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Мечеть Кул-Шариф</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#kazan_03">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#kazan_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Улица Баумана</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#kazan_04">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#kazan_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Храм всех религий</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#kazan_05">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#kazan_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Остров-град Свияжск</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#kazan_06">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#kazan_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Раифский монастырь</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#kazan_07">
-  <rdf:type rdf:resource="#Museum"/>
+<Museum rdf:about="#kazan_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Национальный музей Татарстана</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">400.0</ticketCost>
-</owl:NamedIndividual>
+</Museum>
 
-<owl:NamedIndividual rdf:about="#kazan_08">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#kazan_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Старо-Татарская слобода</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#kazan_09">
-  <rdf:type rdf:resource="#Gastronomy"/>
+<Gastronomy rdf:about="#kazan_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ужин татарской кухни</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1800.0</ticketCost>
-</owl:NamedIndividual>
+</Gastronomy>
 
-<owl:NamedIndividual rdf:about="#kazan_10">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#kazan_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Набережная Казанки и Чаша</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#kaliningrad_01">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#kaliningrad_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Кафедральный собор и остров Канта</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#kaliningrad_02">
-  <rdf:type rdf:resource="#Museum"/>
+<Museum rdf:about="#kaliningrad_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Музей Мирового океана</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">600.0</ticketCost>
-</owl:NamedIndividual>
+</Museum>
 
-<owl:NamedIndividual rdf:about="#kaliningrad_03">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#kaliningrad_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Рыбная деревня</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#kaliningrad_04">
-  <rdf:type rdf:resource="#NatureSite"/>
+<NatureSite rdf:about="#kaliningrad_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Куршская коса (Танцующий лес)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300.0</ticketCost>
-</owl:NamedIndividual>
+</NatureSite>
 
-<owl:NamedIndividual rdf:about="#kaliningrad_05">
-  <rdf:type rdf:resource="#Beach"/>
+<Beach rdf:about="#kaliningrad_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Зеленоградск</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Beach>
 
-<owl:NamedIndividual rdf:about="#kaliningrad_06">
-  <rdf:type rdf:resource="#Beach"/>
+<Beach rdf:about="#kaliningrad_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Светлогорск</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Beach>
 
-<owl:NamedIndividual rdf:about="#kaliningrad_07">
-  <rdf:type rdf:resource="#Museum"/>
+<Museum rdf:about="#kaliningrad_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Музей янтаря</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">400.0</ticketCost>
-</owl:NamedIndividual>
+</Museum>
 
-<owl:NamedIndividual rdf:about="#kaliningrad_08">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#kaliningrad_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Королевские ворота</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#kaliningrad_09">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#kaliningrad_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Район Амалиенау</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#kaliningrad_10">
-  <rdf:type rdf:resource="#Gastronomy"/>
+<Gastronomy rdf:about="#kaliningrad_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ужин балтийской кухни</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2500.0</ticketCost>
-</owl:NamedIndividual>
+</Gastronomy>
 
-<owl:NamedIndividual rdf:about="#altai_01">
-  <rdf:type rdf:resource="#NatureSite"/>
+<NatureSite rdf:about="#altai_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Чемальская ГЭС и остров Патмос</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300.0</ticketCost>
-</owl:NamedIndividual>
+</NatureSite>
 
-<owl:NamedIndividual rdf:about="#altai_02">
-  <rdf:type rdf:resource="#NatureSite"/>
+<NatureSite rdf:about="#altai_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Семинский перевал (Чуйский тракт)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</NatureSite>
 
-<owl:NamedIndividual rdf:about="#altai_03">
-  <rdf:type rdf:resource="#NatureSite"/>
+<NatureSite rdf:about="#altai_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Телецкое озеро (Артыбаш)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2500.0</ticketCost>
-</owl:NamedIndividual>
+</NatureSite>
 
-<owl:NamedIndividual rdf:about="#altai_04">
-  <rdf:type rdf:resource="#NatureSite"/>
+<NatureSite rdf:about="#altai_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Гора Малая Синюха (канатная дорога)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500.0</ticketCost>
-</owl:NamedIndividual>
+</NatureSite>
 
-<owl:NamedIndividual rdf:about="#altai_05">
-  <rdf:type rdf:resource="#NatureSite"/>
+<NatureSite rdf:about="#altai_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Голубые озёра на Катуни</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</NatureSite>
 
-<owl:NamedIndividual rdf:about="#altai_06">
-  <rdf:type rdf:resource="#Museum"/>
+<Museum rdf:about="#altai_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Национальный музей им. Анохина</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300.0</ticketCost>
-</owl:NamedIndividual>
+</Museum>
 
-<owl:NamedIndividual rdf:about="#altai_07">
-  <rdf:type rdf:resource="#NatureSite"/>
+<NatureSite rdf:about="#altai_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Водопад Че-Чкыш</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200.0</ticketCost>
-</owl:NamedIndividual>
+</NatureSite>
 
-<owl:NamedIndividual rdf:about="#altai_08">
-  <rdf:type rdf:resource="#Entertainment"/>
+<Entertainment rdf:about="#altai_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Сплав по Катуни</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3000.0</ticketCost>
-</owl:NamedIndividual>
+</Entertainment>
 
-<owl:NamedIndividual rdf:about="#altai_09">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#altai_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Урочище Калбак-Таш (петроглифы)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#altai_10">
-  <rdf:type rdf:resource="#Gastronomy"/>
+<Gastronomy rdf:about="#altai_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ужин алтайской кухни</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500.0</ticketCost>
-</owl:NamedIndividual>
+</Gastronomy>
 
-<owl:NamedIndividual rdf:about="#istanbul_01">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#istanbul_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Айя-София</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2500.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#istanbul_02">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#istanbul_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Голубая мечеть</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#istanbul_03">
-  <rdf:type rdf:resource="#Museum"/>
+<Museum rdf:about="#istanbul_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Дворец Топкапы</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3000.0</ticketCost>
-</owl:NamedIndividual>
+</Museum>
 
-<owl:NamedIndividual rdf:about="#istanbul_04">
-  <rdf:type rdf:resource="#Shopping"/>
+<Shopping rdf:about="#istanbul_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Гранд-базар</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Shopping>
 
-<owl:NamedIndividual rdf:about="#istanbul_05">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#istanbul_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Цистерна Базилика</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#istanbul_06">
-  <rdf:type rdf:resource="#Entertainment"/>
+<Entertainment rdf:about="#istanbul_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Круиз по Босфору</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000.0</ticketCost>
-</owl:NamedIndividual>
+</Entertainment>
 
-<owl:NamedIndividual rdf:about="#istanbul_07">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#istanbul_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Галатская башня</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2500.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#istanbul_08">
-  <rdf:type rdf:resource="#Shopping"/>
+<Shopping rdf:about="#istanbul_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Истикляль и Таксим</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Shopping>
 
-<owl:NamedIndividual rdf:about="#istanbul_09">
-  <rdf:type rdf:resource="#Museum"/>
+<Museum rdf:about="#istanbul_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Дворец Долмабахче</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3000.0</ticketCost>
-</owl:NamedIndividual>
+</Museum>
 
-<owl:NamedIndividual rdf:about="#istanbul_10">
-  <rdf:type rdf:resource="#Gastronomy"/>
+<Gastronomy rdf:about="#istanbul_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Кадыкёй (рынок и гастро-прогулка)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000.0</ticketCost>
-</owl:NamedIndividual>
+</Gastronomy>
 
-<owl:NamedIndividual rdf:about="#antalya_01">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#antalya_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Старый город Калеичи</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#antalya_02">
-  <rdf:type rdf:resource="#Beach"/>
+<Beach rdf:about="#antalya_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пляж Коньяалты</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Beach>
 
-<owl:NamedIndividual rdf:about="#antalya_03">
-  <rdf:type rdf:resource="#Beach"/>
+<Beach rdf:about="#antalya_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пляж Лара</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Beach>
 
-<owl:NamedIndividual rdf:about="#antalya_04">
-  <rdf:type rdf:resource="#NatureSite"/>
+<NatureSite rdf:about="#antalya_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Водопад Дюден</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300.0</ticketCost>
-</owl:NamedIndividual>
+</NatureSite>
 
-<owl:NamedIndividual rdf:about="#antalya_05">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#antalya_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Античный город Перге</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#antalya_06">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#antalya_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Театр Аспендос</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#antalya_07">
-  <rdf:type rdf:resource="#NatureSite"/>
+<NatureSite rdf:about="#antalya_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Канатная дорога Тюнектепе</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">800.0</ticketCost>
-</owl:NamedIndividual>
+</NatureSite>
 
-<owl:NamedIndividual rdf:about="#antalya_08">
-  <rdf:type rdf:resource="#Entertainment"/>
+<Entertainment rdf:about="#antalya_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Аквариум Анталии</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2500.0</ticketCost>
-</owl:NamedIndividual>
+</Entertainment>
 
-<owl:NamedIndividual rdf:about="#antalya_09">
-  <rdf:type rdf:resource="#NatureSite"/>
+<NatureSite rdf:about="#antalya_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Каньон Гёйнюк</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">600.0</ticketCost>
-</owl:NamedIndividual>
+</NatureSite>
 
-<owl:NamedIndividual rdf:about="#antalya_10">
-  <rdf:type rdf:resource="#Gastronomy"/>
+<Gastronomy rdf:about="#antalya_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ужин в Калеичи (морепродукты)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2500.0</ticketCost>
-</owl:NamedIndividual>
+</Gastronomy>
 
-<owl:NamedIndividual rdf:about="#dubai_01">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#dubai_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Бурдж-Халифа (смотровая)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5000.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#dubai_02">
-  <rdf:type rdf:resource="#Shopping"/>
+<Shopping rdf:about="#dubai_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dubai Mall и поющие фонтаны</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Shopping>
 
-<owl:NamedIndividual rdf:about="#dubai_03">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#dubai_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Старый Дубай: Аль-Фахиди и абра через Крик</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#dubai_04">
-  <rdf:type rdf:resource="#Shopping"/>
+<Shopping rdf:about="#dubai_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Рынки золота и специй</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.4</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Shopping>
 
-<owl:NamedIndividual rdf:about="#dubai_05">
-  <rdf:type rdf:resource="#Beach"/>
+<Beach rdf:about="#dubai_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пляж JBR</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Beach>
 
-<owl:NamedIndividual rdf:about="#dubai_06">
-  <rdf:type rdf:resource="#NatureSite"/>
+<NatureSite rdf:about="#dubai_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Сафари в пустыне</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6000.0</ticketCost>
-</owl:NamedIndividual>
+</NatureSite>
 
-<owl:NamedIndividual rdf:about="#dubai_07">
-  <rdf:type rdf:resource="#Museum"/>
+<Museum rdf:about="#dubai_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Музей будущего</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4000.0</ticketCost>
-</owl:NamedIndividual>
+</Museum>
 
-<owl:NamedIndividual rdf:about="#dubai_08">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#dubai_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Палм-Джумейра и Atlantis</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#dubai_09">
-  <rdf:type rdf:resource="#Gastronomy"/>
+<Gastronomy rdf:about="#dubai_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Дубай Марина (прогулка и ужин)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3500.0</ticketCost>
-</owl:NamedIndividual>
+</Gastronomy>
 
-<owl:NamedIndividual rdf:about="#dubai_10">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#dubai_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dubai Frame</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1200.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#tbilisi_01">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#tbilisi_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Старый город и крепость Нарикала</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#tbilisi_02">
-  <rdf:type rdf:resource="#Entertainment"/>
+<Entertainment rdf:about="#tbilisi_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Серные бани Абанотубани</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000.0</ticketCost>
-</owl:NamedIndividual>
+</Entertainment>
 
-<owl:NamedIndividual rdf:about="#tbilisi_03">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#tbilisi_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Мцхета: Джвари и Светицховели</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#tbilisi_04">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#tbilisi_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Проспект Руставели</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#tbilisi_05">
-  <rdf:type rdf:resource="#Gastronomy"/>
+<Gastronomy rdf:about="#tbilisi_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Фабрика</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000.0</ticketCost>
-</owl:NamedIndividual>
+</Gastronomy>
 
-<owl:NamedIndividual rdf:about="#tbilisi_06">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#tbilisi_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Мост Мира и парк Рике</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#tbilisi_07">
-  <rdf:type rdf:resource="#Museum"/>
+<Museum rdf:about="#tbilisi_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Национальный музей Грузии</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500.0</ticketCost>
-</owl:NamedIndividual>
+</Museum>
 
-<owl:NamedIndividual rdf:about="#tbilisi_08">
-  <rdf:type rdf:resource="#Museum"/>
+<Museum rdf:about="#tbilisi_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Этнографический музей под открытым небом</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.5</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300.0</ticketCost>
-</owl:NamedIndividual>
+</Museum>
 
-<owl:NamedIndividual rdf:about="#tbilisi_09">
-  <rdf:type rdf:resource="#Gastronomy"/>
+<Gastronomy rdf:about="#tbilisi_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Дегустация вина и грузинской кухни</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3000.0</ticketCost>
-</owl:NamedIndividual>
+</Gastronomy>
 
-<owl:NamedIndividual rdf:about="#tbilisi_10">
-  <rdf:type rdf:resource="#NatureSite"/>
+<NatureSite rdf:about="#tbilisi_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Казбеги (однодневная поездка)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4000.0</ticketCost>
-</owl:NamedIndividual>
+</NatureSite>
 
-<owl:NamedIndividual rdf:about="#rome_01">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#rome_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Колизей и Римский форум</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#rome_02">
-  <rdf:type rdf:resource="#Museum"/>
+<Museum rdf:about="#rome_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ватиканские музеи и Сикстинская капелла</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2500.0</ticketCost>
-</owl:NamedIndividual>
+</Museum>
 
-<owl:NamedIndividual rdf:about="#rome_03">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#rome_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Собор Святого Петра</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.9</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#rome_04">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#rome_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Пантеон</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#rome_05">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#rome_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Фонтан Треви и Испанская лестница</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#rome_06">
-  <rdf:type rdf:resource="#Museum"/>
+<Museum rdf:about="#rome_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Галерея Боргезе</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.8</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1800.0</ticketCost>
-</owl:NamedIndividual>
+</Museum>
 
-<owl:NamedIndividual rdf:about="#rome_07">
-  <rdf:type rdf:resource="#Gastronomy"/>
+<Gastronomy rdf:about="#rome_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Трастевере (ужин)</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3500.0</ticketCost>
-</owl:NamedIndividual>
+</Gastronomy>
 
-<owl:NamedIndividual rdf:about="#rome_08">
-  <rdf:type rdf:resource="#Museum"/>
+<Museum rdf:about="#rome_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Замок Святого Ангела</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500.0</ticketCost>
-</owl:NamedIndividual>
+</Museum>
 
-<owl:NamedIndividual rdf:about="#rome_09">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#rome_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Площадь Навона</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.7</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#rome_10">
-  <rdf:type rdf:resource="#Landmark"/>
+<Landmark rdf:about="#rome_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Остия Антика</rdfs:label>
   <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.6</rating>
   <durationHours rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</durationHours>
   <ticketCost rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1500.0</ticketCost>
-</owl:NamedIndividual>
+</Landmark>
 
-<owl:NamedIndividual rdf:about="#m01">
-  <rdf:type rdf:resource="#Month"/>
+<Month rdf:about="#m01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">январь</rdfs:label>
-</owl:NamedIndividual>
+</Month>
 
-<owl:NamedIndividual rdf:about="#m02">
-  <rdf:type rdf:resource="#Month"/>
+<Month rdf:about="#m02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">февраль</rdfs:label>
-</owl:NamedIndividual>
+</Month>
 
-<owl:NamedIndividual rdf:about="#m03">
-  <rdf:type rdf:resource="#Month"/>
+<Month rdf:about="#m03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">март</rdfs:label>
-</owl:NamedIndividual>
+</Month>
 
-<owl:NamedIndividual rdf:about="#m04">
-  <rdf:type rdf:resource="#Month"/>
+<Month rdf:about="#m04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">апрель</rdfs:label>
-</owl:NamedIndividual>
+</Month>
 
-<owl:NamedIndividual rdf:about="#m05">
-  <rdf:type rdf:resource="#Month"/>
+<Month rdf:about="#m05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">май</rdfs:label>
-</owl:NamedIndividual>
+</Month>
 
-<owl:NamedIndividual rdf:about="#m06">
-  <rdf:type rdf:resource="#Month"/>
+<Month rdf:about="#m06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">июнь</rdfs:label>
-</owl:NamedIndividual>
+</Month>
 
-<owl:NamedIndividual rdf:about="#m07">
-  <rdf:type rdf:resource="#Month"/>
+<Month rdf:about="#m07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">июль</rdfs:label>
-</owl:NamedIndividual>
+</Month>
 
-<owl:NamedIndividual rdf:about="#m08">
-  <rdf:type rdf:resource="#Month"/>
+<Month rdf:about="#m08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">август</rdfs:label>
-</owl:NamedIndividual>
+</Month>
 
-<owl:NamedIndividual rdf:about="#m09">
-  <rdf:type rdf:resource="#Month"/>
+<Month rdf:about="#m09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">сентябрь</rdfs:label>
-</owl:NamedIndividual>
+</Month>
 
-<owl:NamedIndividual rdf:about="#m10">
-  <rdf:type rdf:resource="#Month"/>
+<Month rdf:about="#m10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">октябрь</rdfs:label>
-</owl:NamedIndividual>
+</Month>
 
-<owl:NamedIndividual rdf:about="#m11">
-  <rdf:type rdf:resource="#Month"/>
+<Month rdf:about="#m11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ноябрь</rdfs:label>
-</owl:NamedIndividual>
+</Month>
 
-<owl:NamedIndividual rdf:about="#m12">
-  <rdf:type rdf:resource="#Month"/>
+<Month rdf:about="#m12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">декабрь</rdfs:label>
-</owl:NamedIndividual>
+</Month>
 
-<owl:NamedIndividual rdf:about="#clim_sochi_01">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_sochi_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#sochi"/>
   <forMonth rdf:resource="#m01"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_sochi_02">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_sochi_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#sochi"/>
   <forMonth rdf:resource="#m02"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_sochi_03">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_sochi_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#sochi"/>
   <forMonth rdf:resource="#m03"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_sochi_04">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_sochi_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#sochi"/>
   <forMonth rdf:resource="#m04"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_sochi_05">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_sochi_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#sochi"/>
   <forMonth rdf:resource="#m05"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_sochi_06">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_sochi_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#sochi"/>
   <forMonth rdf:resource="#m06"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
+  <rdf:type rdf:resource="#WarmDryRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_sochi_07">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_sochi_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#sochi"/>
   <forMonth rdf:resource="#m07"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -1674,10 +1682,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">23.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_sochi_08">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_sochi_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#sochi"/>
   <forMonth rdf:resource="#m08"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -1685,525 +1693,531 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_sochi_09">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_sochi_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#sochi"/>
   <forMonth rdf:resource="#m09"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
+  <rdf:type rdf:resource="#WarmDryRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_sochi_10">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_sochi_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#sochi"/>
   <forMonth rdf:resource="#m10"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_sochi_11">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_sochi_11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#sochi"/>
   <forMonth rdf:resource="#m11"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_sochi_12">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_sochi_12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#sochi"/>
   <forMonth rdf:resource="#m12"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_spb_01">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_spb_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#spb"/>
   <forMonth rdf:resource="#m01"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-5.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_spb_02">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_spb_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#spb"/>
   <forMonth rdf:resource="#m02"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-6.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_spb_03">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_spb_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#spb"/>
   <forMonth rdf:resource="#m03"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_spb_04">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_spb_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#spb"/>
   <forMonth rdf:resource="#m04"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_spb_05">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_spb_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#spb"/>
   <forMonth rdf:resource="#m05"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_spb_06">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_spb_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#spb"/>
   <forMonth rdf:resource="#m06"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_spb_07">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_spb_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#spb"/>
   <forMonth rdf:resource="#m07"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_spb_08">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_spb_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#spb"/>
   <forMonth rdf:resource="#m08"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_spb_09">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_spb_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#spb"/>
   <forMonth rdf:resource="#m09"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_spb_10">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_spb_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#spb"/>
   <forMonth rdf:resource="#m10"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_spb_11">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_spb_11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#spb"/>
   <forMonth rdf:resource="#m11"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_spb_12">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_spb_12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#spb"/>
   <forMonth rdf:resource="#m12"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-3.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kazan_01">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kazan_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kazan"/>
   <forMonth rdf:resource="#m01"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-10.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kazan_02">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kazan_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kazan"/>
   <forMonth rdf:resource="#m02"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-10.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kazan_03">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kazan_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kazan"/>
   <forMonth rdf:resource="#m03"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-4.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kazan_04">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kazan_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kazan"/>
   <forMonth rdf:resource="#m04"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kazan_05">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kazan_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kazan"/>
   <forMonth rdf:resource="#m05"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kazan_06">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kazan_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kazan"/>
   <forMonth rdf:resource="#m06"/>
+  <rdf:type rdf:resource="#WarmDryRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kazan_07">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kazan_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kazan"/>
   <forMonth rdf:resource="#m07"/>
+  <rdf:type rdf:resource="#WarmDryRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kazan_08">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kazan_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kazan"/>
   <forMonth rdf:resource="#m08"/>
+  <rdf:type rdf:resource="#WarmDryRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kazan_09">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kazan_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kazan"/>
   <forMonth rdf:resource="#m09"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kazan_10">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kazan_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kazan"/>
   <forMonth rdf:resource="#m10"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kazan_11">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kazan_11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kazan"/>
   <forMonth rdf:resource="#m11"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-2.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kazan_12">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kazan_12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kazan"/>
   <forMonth rdf:resource="#m12"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-8.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kaliningrad_01">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kaliningrad_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kaliningrad"/>
   <forMonth rdf:resource="#m01"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kaliningrad_02">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kaliningrad_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kaliningrad"/>
   <forMonth rdf:resource="#m02"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-1.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kaliningrad_03">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kaliningrad_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kaliningrad"/>
   <forMonth rdf:resource="#m03"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kaliningrad_04">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kaliningrad_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kaliningrad"/>
   <forMonth rdf:resource="#m04"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kaliningrad_05">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kaliningrad_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kaliningrad"/>
   <forMonth rdf:resource="#m05"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kaliningrad_06">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kaliningrad_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kaliningrad"/>
   <forMonth rdf:resource="#m06"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kaliningrad_07">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kaliningrad_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kaliningrad"/>
   <forMonth rdf:resource="#m07"/>
+  <rdf:type rdf:resource="#WarmDryRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kaliningrad_08">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kaliningrad_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kaliningrad"/>
   <forMonth rdf:resource="#m08"/>
+  <rdf:type rdf:resource="#WarmDryRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kaliningrad_09">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kaliningrad_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kaliningrad"/>
   <forMonth rdf:resource="#m09"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kaliningrad_10">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kaliningrad_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kaliningrad"/>
   <forMonth rdf:resource="#m10"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kaliningrad_11">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kaliningrad_11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kaliningrad"/>
   <forMonth rdf:resource="#m11"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_kaliningrad_12">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_kaliningrad_12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#kaliningrad"/>
   <forMonth rdf:resource="#m12"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_altai_01">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_altai_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#altai"/>
   <forMonth rdf:resource="#m01"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-14.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_altai_02">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_altai_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#altai"/>
   <forMonth rdf:resource="#m02"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-12.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_altai_03">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_altai_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#altai"/>
   <forMonth rdf:resource="#m03"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-5.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_altai_04">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_altai_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#altai"/>
   <forMonth rdf:resource="#m04"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_altai_05">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_altai_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#altai"/>
   <forMonth rdf:resource="#m05"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_altai_06">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_altai_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#altai"/>
   <forMonth rdf:resource="#m06"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_altai_07">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_altai_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#altai"/>
   <forMonth rdf:resource="#m07"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_altai_08">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_altai_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#altai"/>
   <forMonth rdf:resource="#m08"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_altai_09">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_altai_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#altai"/>
   <forMonth rdf:resource="#m09"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_altai_10">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_altai_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#altai"/>
   <forMonth rdf:resource="#m10"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_altai_11">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_altai_11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#altai"/>
   <forMonth rdf:resource="#m11"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-6.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_altai_12">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_altai_12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#altai"/>
   <forMonth rdf:resource="#m12"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-12.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_istanbul_01">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_istanbul_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#istanbul"/>
   <forMonth rdf:resource="#m01"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_istanbul_02">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_istanbul_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#istanbul"/>
   <forMonth rdf:resource="#m02"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_istanbul_03">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_istanbul_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#istanbul"/>
   <forMonth rdf:resource="#m03"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_istanbul_04">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_istanbul_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#istanbul"/>
   <forMonth rdf:resource="#m04"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_istanbul_05">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_istanbul_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#istanbul"/>
   <forMonth rdf:resource="#m05"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_istanbul_06">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_istanbul_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#istanbul"/>
   <forMonth rdf:resource="#m06"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2211,10 +2225,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_istanbul_07">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_istanbul_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#istanbul"/>
   <forMonth rdf:resource="#m07"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2222,10 +2236,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_istanbul_08">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_istanbul_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#istanbul"/>
   <forMonth rdf:resource="#m08"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2233,10 +2247,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_istanbul_09">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_istanbul_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#istanbul"/>
   <forMonth rdf:resource="#m09"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2244,75 +2258,75 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_istanbul_10">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_istanbul_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#istanbul"/>
   <forMonth rdf:resource="#m10"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_istanbul_11">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_istanbul_11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#istanbul"/>
   <forMonth rdf:resource="#m11"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_istanbul_12">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_istanbul_12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#istanbul"/>
   <forMonth rdf:resource="#m12"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_antalya_01">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_antalya_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#antalya"/>
   <forMonth rdf:resource="#m01"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_antalya_02">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_antalya_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#antalya"/>
   <forMonth rdf:resource="#m02"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_antalya_03">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_antalya_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#antalya"/>
   <forMonth rdf:resource="#m03"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_antalya_04">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_antalya_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#antalya"/>
   <forMonth rdf:resource="#m04"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_antalya_05">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_antalya_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#antalya"/>
   <forMonth rdf:resource="#m05"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2320,10 +2334,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_antalya_06">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_antalya_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#antalya"/>
   <forMonth rdf:resource="#m06"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2331,10 +2345,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_antalya_07">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_antalya_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#antalya"/>
   <forMonth rdf:resource="#m07"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2342,10 +2356,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_antalya_08">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_antalya_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#antalya"/>
   <forMonth rdf:resource="#m08"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2353,10 +2367,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">28.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_antalya_09">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_antalya_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#antalya"/>
   <forMonth rdf:resource="#m09"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2364,58 +2378,61 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_antalya_10">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_antalya_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#antalya"/>
   <forMonth rdf:resource="#m10"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
+  <rdf:type rdf:resource="#WarmDryRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_antalya_11">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_antalya_11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#antalya"/>
   <forMonth rdf:resource="#m11"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_antalya_12">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_antalya_12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#antalya"/>
   <forMonth rdf:resource="#m12"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_dubai_01">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_dubai_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#dubai"/>
   <forMonth rdf:resource="#m01"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
+  <rdf:type rdf:resource="#WarmDryRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">19.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_dubai_02">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_dubai_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#dubai"/>
   <forMonth rdf:resource="#m02"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
+  <rdf:type rdf:resource="#WarmDryRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_dubai_03">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_dubai_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#dubai"/>
   <forMonth rdf:resource="#m03"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2423,10 +2440,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">23.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_dubai_04">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_dubai_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#dubai"/>
   <forMonth rdf:resource="#m04"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2434,10 +2451,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">27.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_dubai_05">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_dubai_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#dubai"/>
   <forMonth rdf:resource="#m05"/>
   <rdf:type rdf:resource="#HotRecord"/>
@@ -2445,10 +2462,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">31.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_dubai_06">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_dubai_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#dubai"/>
   <forMonth rdf:resource="#m06"/>
   <rdf:type rdf:resource="#HotRecord"/>
@@ -2456,10 +2473,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_dubai_07">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_dubai_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#dubai"/>
   <forMonth rdf:resource="#m07"/>
   <rdf:type rdf:resource="#HotRecord"/>
@@ -2467,10 +2484,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_dubai_08">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_dubai_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#dubai"/>
   <forMonth rdf:resource="#m08"/>
   <rdf:type rdf:resource="#HotRecord"/>
@@ -2478,10 +2495,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_dubai_09">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_dubai_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#dubai"/>
   <forMonth rdf:resource="#m09"/>
   <rdf:type rdf:resource="#HotRecord"/>
@@ -2489,20 +2506,20 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">33.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_dubai_10">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_dubai_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#dubai"/>
   <forMonth rdf:resource="#m10"/>
   <rdf:type rdf:resource="#WarmDryRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">29.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_dubai_11">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_dubai_11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#dubai"/>
   <forMonth rdf:resource="#m11"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2510,10 +2527,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_dubai_12">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_dubai_12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#dubai"/>
   <forMonth rdf:resource="#m12"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2521,64 +2538,65 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_tbilisi_01">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_tbilisi_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#tbilisi"/>
   <forMonth rdf:resource="#m01"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_tbilisi_02">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_tbilisi_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#tbilisi"/>
   <forMonth rdf:resource="#m02"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_tbilisi_03">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_tbilisi_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#tbilisi"/>
   <forMonth rdf:resource="#m03"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_tbilisi_04">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_tbilisi_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#tbilisi"/>
   <forMonth rdf:resource="#m04"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_tbilisi_05">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_tbilisi_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#tbilisi"/>
   <forMonth rdf:resource="#m05"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_tbilisi_06">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_tbilisi_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#tbilisi"/>
   <forMonth rdf:resource="#m06"/>
+  <rdf:type rdf:resource="#WarmDryRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_tbilisi_07">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_tbilisi_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#tbilisi"/>
   <forMonth rdf:resource="#m07"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2586,10 +2604,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_tbilisi_08">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_tbilisi_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#tbilisi"/>
   <forMonth rdf:resource="#m08"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2597,93 +2615,95 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_tbilisi_09">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_tbilisi_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#tbilisi"/>
   <forMonth rdf:resource="#m09"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
+  <rdf:type rdf:resource="#WarmDryRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_tbilisi_10">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_tbilisi_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#tbilisi"/>
   <forMonth rdf:resource="#m10"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_tbilisi_11">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_tbilisi_11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#tbilisi"/>
   <forMonth rdf:resource="#m11"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_tbilisi_12">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_tbilisi_12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#tbilisi"/>
   <forMonth rdf:resource="#m12"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_rome_01">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_rome_01">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#rome"/>
   <forMonth rdf:resource="#m01"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_rome_02">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_rome_02">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#rome"/>
   <forMonth rdf:resource="#m02"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_rome_03">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_rome_03">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#rome"/>
   <forMonth rdf:resource="#m03"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">11.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_rome_04">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_rome_04">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#rome"/>
   <forMonth rdf:resource="#m04"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">14.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_rome_05">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_rome_05">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#rome"/>
   <forMonth rdf:resource="#m05"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
+  <rdf:type rdf:resource="#WarmDryRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_rome_06">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_rome_06">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#rome"/>
   <forMonth rdf:resource="#m06"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2691,10 +2711,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_rome_07">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_rome_07">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#rome"/>
   <forMonth rdf:resource="#m07"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2702,10 +2722,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_rome_08">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_rome_08">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#rome"/>
   <forMonth rdf:resource="#m08"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2713,10 +2733,10 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">25.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_rome_09">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_rome_09">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#rome"/>
   <forMonth rdf:resource="#m09"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
@@ -2724,35 +2744,35 @@
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">9</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_rome_10">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_rome_10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#rome"/>
   <forMonth rdf:resource="#m10"/>
   <rdf:type rdf:resource="#ComfortableRecord"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">17.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_rome_11">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_rome_11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#rome"/>
   <forMonth rdf:resource="#m11"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">11</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
-<owl:NamedIndividual rdf:about="#clim_rome_12">
-  <rdf:type rdf:resource="#ClimateRecord"/>
+<ClimateRecord rdf:about="#clim_rome_12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <climateOf rdf:resource="#rome"/>
   <forMonth rdf:resource="#m12"/>
   <month rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</month>
   <meanTemp rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</meanTemp>
   <rainDays rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</rainDays>
-</owl:NamedIndividual>
+</ClimateRecord>
 
 <swrl:Variable rdf:about="urn:swrl#r"/>
 
@@ -3071,7 +3091,7 @@
                           <rdf:rest>
                             <rdf:Description>
                               <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21.0</rdf:first>
+                              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">18.0</rdf:first>
                             </rdf:Description>
                           </rdf:rest>
                         </rdf:Description>
@@ -3089,7 +3109,7 @@
                               <rdf:rest>
                                 <rdf:Description>
                                   <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.0</rdf:first>
+                                  <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">13.0</rdf:first>
                                 </rdf:Description>
                               </rdf:rest>
                             </rdf:Description>

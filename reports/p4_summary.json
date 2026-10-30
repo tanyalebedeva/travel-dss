@@ -19,7 +19,7 @@
       "greedy_n_pois": 8,
       "greedy_travel_h": 3.54,
       "gain_vs_greedy_%": 15.7,
-      "solve_s": 4.71,
+      "solve_s": 6.14,
       "candidates": 10,
       "hours_used": [
         4.34,
@@ -41,7 +41,7 @@
       "destination": "Калининград",
       "status": "Optimal",
       "hotel": "эконом",
-      "objective": -16.34,
+      "objective": 23.59,
       "n_pois": 7,
       "utility": 51.01,
       "travel_h": 1.61,
@@ -55,7 +55,7 @@
       "greedy_n_pois": 7,
       "greedy_travel_h": 1.87,
       "gain_vs_greedy_%": 0.0,
-      "solve_s": 3.24,
+      "solve_s": 1.19,
       "candidates": 8,
       "hours_used": [
         4.95,
@@ -77,27 +77,27 @@
       "destination": "Казань",
       "status": "Optimal",
       "hotel": "стандарт",
-      "objective": 55.49,
+      "objective": 55.63,
       "n_pois": 10,
       "utility": 72.64,
-      "travel_h": 6.7,
+      "travel_h": 6.74,
       "flight_visa": 10360.0,
       "stay": 31670.0,
       "tickets": 2900.0,
-      "transfers": 6690.0,
-      "total": 51620.0,
-      "budget_slack": 7880.0,
+      "transfers": 6340.0,
+      "total": 51260.0,
+      "budget_slack": 8240.0,
       "greedy_utility": 64.99,
       "greedy_n_pois": 9,
       "greedy_travel_h": 4.77,
       "gain_vs_greedy_%": 11.8,
-      "solve_s": 5.68,
+      "solve_s": 1.53,
       "candidates": 10,
       "hours_used": [
         4.15,
-        7.07,
+        5.91,
         7.73,
-        6.75,
+        7.95,
         0.0
       ],
       "hours_available": [
@@ -126,7 +126,7 @@
       "hotel": "стандарт",
       "n_pois": 8,
       "utility": 54.94,
-      "total": 60460.0
+      "total": 60220.0
     },
     {
       "pace_h": 6,
@@ -180,7 +180,7 @@
       "hotel": "эконом",
       "n_pois": 10,
       "utility": 69.92,
-      "total": 57700.0
+      "total": 57710.0
     },
     {
       "pace_h": 10,
