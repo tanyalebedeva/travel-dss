@@ -97,3 +97,38 @@ def test_threshold_is_root():
     a = uncertainty.AltInput("x", "X", 50_000, 90_000, 0.03, 0.3, 0.2, 0.06)
     q = uncertainty.thresholds(a)["q_S1_S2"]
     assert abs(uncertainty.ev(a, "S1", q) - uncertainty.ev(a, "S2", q)) < 1e-6
+
+
+def test_reliable_variant_strategy_follows_hurwicz(result):
+    v = next(x for x in result.variants if x.kind == "Надёжный")
+    hz = [c for c in result.criteria.columns if c.startswith("Гурвиц")][0]
+    rows = result.criteria[hz][[k for k in result.criteria.index if k.startswith(v.name + " |")]]
+    assert v.strategy == rows.idxmax().split(" | ")[1]
+
+
+def test_economy_variant_uses_economy_hotel(result):
+    v = next(x for x in result.variants if x.kind == "Экономный")
+    assert v.route.hotel_class == "эконом"
+
+
+def test_route_totals_are_plain_floats(result):
+    for v in result.variants:
+        assert all(type(h) is float for h in v.route.totals["hours_used"])
+
+
+def test_profile_matrix_follows_interests():
+    beach = TripRequest(month=7, with_children=True,
+                        profile={"culture": 0.2, "nature": 0.5, "beach": 0.95, "gastronomy": 0.4,
+                                 "nightlife": 0.1, "shopping": 0.3, "family": 0.9})
+    for t in (TripRequest(), beach):
+        assert ahp.priority_vector(ahp.matrix_from_profile(t)).cr < 0.10
+    w_culture = ahp.priority_vector(ahp.matrix_from_profile(TripRequest())).weights
+    w_beach = ahp.priority_vector(ahp.matrix_from_profile(beach)).weights
+    k3, k4 = ahp.CRIT_IDS.index("K3"), ahp.CRIT_IDS.index("K4")
+    assert w_culture[k3] > w_culture[k4] and w_beach[k4] > w_beach[k3]
+
+
+def test_baltic_beach_season_in_summer():
+    facts = knowledge._python_inference().set_index("dest_id")
+    assert {7, 8} <= set(facts.loc["kaliningrad", "beach_season_months"])
+    assert 5 not in facts.loc["kaliningrad", "beach_season_months"]

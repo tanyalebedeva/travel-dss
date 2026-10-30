@@ -8,7 +8,7 @@
   x[i,j,t] ∈ {0,1} - в день t переезд i → j (узел 0 - отель);
   u[i,t] ≥ 0      - порядковый номер объекта в дне (устранение подциклов, MTZ);
   z[k] ∈ {0,1}    - выбран класс проживания k; w[t] ∈ {0,1} - в день t есть экскурсии.
-Решатель: HiGHS (по умолчанию в PuLP ≥ 4) или CBC.
+Решатель: HiGHS (через highspy), если установлен, иначе встроенный в PuLP CBC.
 """
 from __future__ import annotations
 
@@ -96,11 +96,11 @@ def optimize_route(dest_id: str, pois: pd.DataFrame, days: int, budget: float, f
     n = len(P)
 
     m = pulp.LpProblem("route", pulp.LpMaximize)
-    y = _vdict(m, "y", (P, T), cat="Binary")
-    x = _vdict(m, "x", (N, N, T), cat="Binary")
-    u = _vdict(m, "u", (P, T), lowBound=0, upBound=n)
-    w = _vdict(m, "w", T, cat="Binary")
-    z = _vdict(m, "z", list(hotel_classes), cat="Binary")
+    y = pulp.LpVariable.dicts("y", (P, T), cat="Binary")
+    x = pulp.LpVariable.dicts("x", (N, N, T), cat="Binary")
+    u = pulp.LpVariable.dicts("u", (P, T), lowBound=0, upBound=n)
+    w = pulp.LpVariable.dicts("w", T, cat="Binary")
+    z = pulp.LpVariable.dicts("z", list(hotel_classes), cat="Binary")
 
     travel_h = pulp.lpSum(tt[i, j] * x[i][j][t] for i in N for j in N if i != j for t in T)
     taxi = pulp.lpSum(tc[i, j] * x[i][j][t] for i in N for j in N if i != j for t in T)
@@ -193,8 +193,8 @@ def optimize_route(dest_id: str, pois: pd.DataFrame, days: int, budget: float, f
         "utility": round(sum(util[i] * (y[i][t].value() or 0) for i in P for t in T), 2),
         "travel_h": round(pulp.value(travel_h), 2),
         "n_pois": int(round(sum((y[i][t].value() or 0) for i in P for t in T))),
-        "hours_used": [round(sum(dur[i] * (y[i][t].value() or 0) for i in P if i not in evening)
-                             + sum(tt[i, j] * (x[i][j][t].value() or 0) for i in N for j in N if i != j), 2)
+        "hours_used": [round(float(sum(dur[i] * (y[i][t].value() or 0) for i in P if i not in evening)
+                             + sum(tt[i, j] * (x[i][j][t].value() or 0) for i in N for j in N if i != j)), 2)
                        for t in T],
         "hours_available": H,
     }
@@ -226,15 +226,8 @@ def greedy_route(dest_id: str, pois: pd.DataFrame, days: int, pace: float = 8.0)
     return {"utility": round(total_u, 2), "travel_h": round(total_t, 2), "n_pois": n}
 
 
-def _vdict(m, name, idx, **kw):
-    """Совместимость PuLP 3.x (LpVariable.dicts) и 4.x (LpProblem.add_variable_dicts)."""
-    if hasattr(m, "add_variable_dicts"):
-        return m.add_variable_dicts(name, idx, **kw)
-    return pulp.LpVariable.dicts(name, idx, **kw)
-
-
 def _solve(m, time_limit: int, gap: float = 0.005) -> tuple[str, float]:
-    """Решение с HiGHS (если есть) или CBC; совместимо с PuLP 3.x и 4.x. Возвращает (статус, время, с)."""
+    """Решение с HiGHS (если есть) или CBC. Возвращает (статус, время решения в секундах)."""
     import time
     if "HiGHS" in pulp.listSolvers(onlyAvailable=True):
         solver = pulp.HiGHS(msg=False, timeLimit=time_limit, gapRel=gap)
@@ -243,8 +236,6 @@ def _solve(m, time_limit: int, gap: float = 0.005) -> tuple[str, float]:
     t0 = time.time()
     res = m.solve(solver)
     elapsed = time.time() - t0
-    if hasattr(res, "status") and hasattr(res.status, "name"):          # PuLP 4.x
-        return res.status.name, elapsed
     return {1: "Optimal", 0: "NotSolved", -1: "Infeasible", -2: "Unbounded"}.get(int(res), str(res)), elapsed
 
 

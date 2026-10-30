@@ -24,9 +24,10 @@ SWRL_RULES = [
     "ClimateRecord(?r), meanTemp(?r, ?t), rainDays(?r, ?n), greaterThanOrEqual(?t, 16.0), "
     "lessThanOrEqual(?t, 28.0), lessThanOrEqual(?n, 9.0) -> ComfortableRecord(?r)",
     "ComfortableRecord(?r), climateOf(?r, ?d), forMonth(?r, ?m) -> comfortableIn(?d, ?m)",
-    # 3–4. Купальный сезон пляжного направления: от 21 °C и не более 7 дождливых дней
-    "ClimateRecord(?r), meanTemp(?r, ?t), rainDays(?r, ?n), greaterThanOrEqual(?t, 21.0), "
-    "lessThanOrEqual(?n, 7.0) -> WarmDryRecord(?r)",
+    # 3–4. Купальный сезон пляжного направления: средняя суточная температура от 18 °C
+    #      и не более 13 дождливых дней (так в сезон попадают и Чёрное, и Балтийское море)
+    "ClimateRecord(?r), meanTemp(?r, ?t), rainDays(?r, ?n), greaterThanOrEqual(?t, 18.0), "
+    "lessThanOrEqual(?n, 13.0) -> WarmDryRecord(?r)",
     "WarmDryRecord(?r), climateOf(?r, ?d), BeachDestination(?d), forMonth(?r, ?m) -> beachSeasonIn(?d, ?m)",
     # 5–6. Жаркий месяц: выше 30 °C
     "ClimateRecord(?r), meanTemp(?r, ?t), greaterThan(?t, 30.0) -> HotRecord(?r)",
@@ -213,7 +214,7 @@ def _python_inference() -> pd.DataFrame:
         rows.append({
             "dest_id": d.id, "name": d["name"], "classes": ", ".join(sorted(classes)),
             "comfortable_months": sorted(c[(c.temp_c >= 16) & (c.temp_c <= 28) & (c.rain_days <= 9)].month.astype(int)),
-            "beach_season_months": sorted(c[(c.temp_c >= 21) & (c.rain_days <= 7)].month.astype(int)) if is_beach else [],
+            "beach_season_months": sorted(c[(c.temp_c >= 18) & (c.rain_days <= 13)].month.astype(int)) if is_beach else [],
             "hot_months": sorted(c[c.temp_c > 30].month.astype(int)),
             "needs_visa": bool(d.visa_required), "needs_cash": not bool(d.ru_cards),
         })

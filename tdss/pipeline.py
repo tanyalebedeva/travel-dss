@@ -19,7 +19,7 @@ import numpy as np
 import pandas as pd
 
 from . import ahp, recommender, route_opt, uncertainty
-from .costs import trip_cost
+from .costs import HOTEL_CLASSES, trip_cost
 from .data import TripRequest, load_destinations
 from .knowledge import evaluate
 
@@ -117,13 +117,20 @@ def run(trip: TripRequest, criteria_matrix=None, rec_weights=recommender.DEFAULT
 
     variants = []
     bayes = crit["Байес (ожидаемый выигрыш)"]
-    for kind, row, cw in (("Оптимальный", v1, 0.8 * trip.budget_sensitivity),
-                          ("Экономный", v2, 2.5),
-                          ("Надёжный", v3, 0.8 * trip.budget_sensitivity)):
+    hurwicz = crit[hz_col]
+    base_cw = 0.8 * trip.budget_sensitivity
+    # «Экономный»: только эконом-проживание и умеренный штраф за траты, чтобы маршрут
+    # оставался полноценным (при сильном штрафе оптимизатор оставлял 2–3 объекта на неделю)
+    econ_hotels = {"эконом": HOTEL_CLASSES["эконом"]}
+    for kind, row, cw, hotels, rule in (("Оптимальный", v1, base_cw, None, bayes),
+                                        ("Экономный", v2, max(base_cw, 1.0), econ_hotels, bayes),
+                                        ("Надёжный", v3, base_cw, None, hurwicz)):
         did = row.dest_id
         inf = kb[did]
-        rows_b = bayes[[k for k in bayes.index if k.startswith(row["name"] + " |")]]
-        strategy = rows_b.idxmax().split(" | ")[1]
+        # стратегия бронирования выбирается тем же критерием, что и сам вариант:
+        # для «Надёжного» (осторожный ЛПР) - по Гурвицу, для остальных - по Байесу
+        rows_s = rule[[k for k in rule.index if k.startswith(row["name"] + " |")]]
+        strategy = rows_s.idxmax().split(" | ")[1]
         mc_row = mc[mc.dest_id == did].iloc[0].to_dict()
         pois = recommender.recommend_pois(did, trip, inf.facts["exclude_categories"],
                                           inf.facts["outdoor_factor"], inf.facts.get("beach_bonus", False))
@@ -134,7 +141,7 @@ def run(trip: TripRequest, criteria_matrix=None, rec_weights=recommender.DEFAULT
             route = route_opt.optimize_route(
                 did, pois, trip.days, route_budget,
                 c["flight"] + c["visa"], c["daily"], cost_weight=cw, pace=trip.pace_hours,
-                must_visit=trip.must_visit, time_limit=route_time_limit)
+                must_visit=trip.must_visit, hotel_classes=hotels, time_limit=route_time_limit)
             if route.totals:
                 tot = route.totals["total"]
                 fixed = route.totals["flight_visa"] + route.totals["stay"]
@@ -148,15 +155,17 @@ def run(trip: TripRequest, criteria_matrix=None, rec_weights=recommender.DEFAULT
                           "route_total_with_fees": round(tot * (1 + inf.facts["fees_rate"]), -1)}
         warns = list(inf.warnings)
         if mc_row.get("P(перерасход маршрута)", 0) > 0.2:
-            warns.append(f"Высокий риск перерасхода ({mc_row['P(перерасход маршрута)']*100:.0f}%): "
-                         "маршрут почти исчерпывает бюджет - проверьте реальные цены перед покупкой")
+            warns.append(f"Высокий риск перерасхода по маршруту ({mc_row['P(перерасход маршрута)']*100:.0f}%): "
+                         "маршрут почти исчерпывает бюджет - проверьте реальные цены перед покупкой "
+                         "или выберите вариант «Экономный»")
         variants.append(Variant(kind, did, row["name"], float(row.integral),
-                                _rationale(kind, row, t, a, mc_row, thr[did], strategy, bbc),
+                                _rationale(kind, row, t, a, mc_row, thr[did], strategy, bbc,
+                                           rule_name="Гурвица (α = 0,6)" if rule is hurwicz else "Байеса"),
                                 strategy, route, c, mc_row, warns, pois))
     return DSSResult(trip, t, a, r, kb, pay, prob, crit, bbc, tree_ev, path, thr, mc, variants)
 
 
-def _rationale(kind, row, t, a, mc_row, thr, strategy, bbc=None) -> list[str]:
+def _rationale(kind, row, t, a, mc_row, thr, strategy, bbc=None, rule_name="Байеса") -> list[str]:
     loc = a.local.loc[row.dest_id]
     w = a.criteria.weights
     contrib = loc.to_numpy() * w
@@ -166,10 +175,11 @@ def _rationale(kind, row, t, a, mc_row, thr, strategy, bbc=None) -> list[str]:
            f"наибольший вклад в АНР - критерии {crit_txt}.",
            row.explanation,
            f"Прогноз стоимости перелёта и проживания {row.cost:,.0f} ₽ (80%-й интервал {row.cost_lo:,.0f}–"
-           f"{row.cost_hi:,.0f} ₽); при базовой смете с типичными тратами на месте вероятность выйти за бюджет - "
-           f"{mc_row['P(превышение бюджета)']*100:.1f}%.".replace(",", " "),
-           f"Стратегия бронирования по критерию Байеса: «{strategy}». Возвратный тариф выгоднее, "
-           f"если вероятность срыва выше {thr['q_S1_S2']*100:.0f}% (сейчас {row.disruption_risk*100:.1f}%)."]
+           f"{row.cost_hi:,.0f} ₽).".replace(",", " "),
+           _overrun_text(mc_row),
+           f"Стратегия бронирования по критерию {rule_name}: «{strategy}». По ожидаемому выигрышу возвратный "
+           f"тариф выгоднее, если вероятность срыва выше {thr['q_S1_S2']*100:.0f}% "
+           f"(сейчас {row.disruption_risk*100:.1f}%)."]
     if bbc is not None:
         wins = [c.split(" (")[0] for c, d in zip(bbc["Критерий"], bbc["Лучшее решение"])
                 if d.startswith(row["name"] + " |")]
@@ -180,3 +190,13 @@ def _rationale(kind, row, t, a, mc_row, thr, strategy, bbc=None) -> list[str]:
     if kind == "Надёжный":
         out.insert(0, "Лучший по критерию Гурвица (α = 0,6, осторожный ЛПР) среди оставшихся кандидатов.")
     return out
+
+
+def _overrun_text(mc_row: dict) -> str:
+    """Две разные вероятности перерасхода подписываются явно, чтобы ЛПР не путал их."""
+    base = mc_row["P(превышение бюджета)"] * 100
+    txt = f"Вероятность выйти за бюджет по типовой смете направления - {base:.1f}%"
+    if "P(перерасход маршрута)" in mc_row:
+        txt += (f"; для построенного маршрута (с билетами, такси и выбранным отелем) - "
+                f"{mc_row['P(перерасход маршрута)'] * 100:.1f}%")
+    return txt + "."

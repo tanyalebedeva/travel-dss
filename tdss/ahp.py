@@ -90,6 +90,30 @@ def matrix_from_importance(importance: dict[str, float]) -> np.ndarray:
     return a
 
 
+def importance_from_profile(trip: TripRequest) -> dict[str, int]:
+    """Начальные оценки важности критериев (1…9), выведенные из профиля интересов ЛПР.
+
+    Нужны, чтобы при смене интересов веса АНР менялись вместе с ними: ЛПР получает
+    согласованную стартовую матрицу и при желании правит её вручную.
+    """
+    p = trip.profile
+    outdoor = max(p["nature"], p["beach"])
+    short_trip = trip.days <= 4
+    raw = {
+        "K1": 2 + 7 * trip.budget_sensitivity,
+        "K2": 3 + 4 * outdoor + (1 if trip.with_children else 0),
+        "K3": 1 + 8 * max(p["culture"], 0.7 * p["gastronomy"]),
+        "K4": 1 + 8 * outdoor,
+        "K5": 3 + (2 if short_trip else 0) + (2 if trip.with_children else 0),
+        "K6": 4 + 4 * max(p["family"], 1.0 if trip.with_children else 0.0),
+    }
+    return {k: int(np.clip(round(v), 1, 9)) for k, v in raw.items()}
+
+
+def matrix_from_profile(trip: TripRequest) -> np.ndarray:
+    return matrix_from_importance(importance_from_profile(trip))
+
+
 def matrix_from_values(values: np.ndarray, sense: str = "max") -> np.ndarray:
     """Матрица парных сравнений альтернатив по количественному показателю:
     a_ij = 1 + 8·|Δ|/размах (округление до целого шкалы Саати), обратная - для отрицательной разности."""
