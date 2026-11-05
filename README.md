@@ -6,13 +6,9 @@
 На выходе ЛПР получает три обоснованных варианта: **«Оптимальный»**, **«Экономный»** и **«Надёжный»**,
 каждый с маршрутом по дням, сметой, стратегией бронирования, рисками и предупреждениями.
 
-**Демонстрация:** _ссылка на запись или развёрнутое приложение_
-
 ![Три варианта поездки](docs/screenshots/app_1_variants.png)
 
 ## Запуск в Docker
-
-Нужен только Docker Desktop (Windows, macOS) или Docker Engine (Linux).
 
 ```bash
 docker compose up --build               # интерфейс ЛПР: http://localhost:8501
@@ -21,12 +17,6 @@ docker compose run --rm app python run_all.py    # пересчитать все
 docker compose run --rm app python -m pytest -q  # автоматические проверки
 docker compose down                     # остановить
 ```
-
-Первая сборка скачивает базовый образ Python и библиотеки (около 400 МБ), повторные запуски
-занимают секунды. Каталоги `reports/`, `kb/` и `superset/data/` подключены с хоста, поэтому
-результаты пересчёта сразу видны в интерфейсе и в дашборде. Ризонер Pellet требует Java, которая
-по умолчанию в образ не входит: база знаний тогда работает на эквивалентном выводе на Python.
-Образ с Java: `WITH_JAVA=1 docker compose up --build` (в PowerShell: `$env:WITH_JAVA=1; docker compose up --build`).
 
 ## Запуск без Docker
 
