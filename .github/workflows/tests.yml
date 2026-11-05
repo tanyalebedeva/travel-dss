@@ -20,3 +20,21 @@ jobs:
           java-version: "17"
       - run: pip install -r requirements.txt
       - run: python -m pytest -q
+
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Сборка образа
+        run: docker build -t travel-dss .
+      - name: Тесты внутри контейнера
+        run: docker run --rm travel-dss python -m pytest -q
+      - name: Интерфейс отвечает на запросы
+        run: |
+          docker run -d --name tdss -p 8501:8501 travel-dss
+          for i in $(seq 1 30); do
+            if curl -fs http://localhost:8501/_stcore/health; then echo; exit 0; fi
+            sleep 2
+          done
+          docker logs tdss
+          exit 1

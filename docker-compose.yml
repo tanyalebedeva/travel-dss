@@ -1,0 +1,40 @@
+# СППР выбора места для путешествия в Docker.
+#
+#   docker compose up --build              # интерфейс ЛПР: http://localhost:8501
+#   docker compose --profile bi up --build # плюс дашборд Superset: http://localhost:8088 (admin / admin)
+#   docker compose run --rm app python run_all.py   # пересчитать все 8 практик
+#   docker compose run --rm app python -m pytest -q # автоматические проверки
+#
+# Каталоги reports/, kb/ и superset/data/ подключены с хоста: результаты пересчёта
+# сразу видны и в интерфейсе, и в дашборде Superset.
+services:
+  app:
+    build:
+      context: .
+      args:
+        WITH_JAVA: "${WITH_JAVA:-0}"
+    image: travel-dss:latest
+    container_name: tdss-app
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./reports:/app/reports
+      - ./kb:/app/kb
+      - ./superset/data:/app/superset/data
+    restart: unless-stopped
+
+  superset:
+    profiles: ["bi"]
+    image: apache/superset:4.1.2
+    container_name: tdss-superset
+    ports:
+      - "8088:8088"
+    environment:
+      SUPERSET_SECRET_KEY: "${SUPERSET_SECRET_KEY:-tdss-local-dev-key-change-me}"
+      SUPERSET_CONFIG_PATH: /app/pythonpath/superset_config.py
+    volumes:
+      - ./superset/superset_config.py:/app/pythonpath/superset_config.py:ro
+      - ./superset/data:/app/tdss_data
+      - ./superset/dashboard_export.zip:/app/dashboard_export.zip:ro
+      - ./superset/bootstrap.sh:/app/bootstrap.sh:ro
+    command: ["/bin/bash", "/app/bootstrap.sh"]
